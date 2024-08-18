@@ -8,14 +8,14 @@ from util import IntRange
 
 try:
     import pyfiglet
-    ban=pyfiglet.figlet_format("SSH Honeypot By Pheonix")
+    ban=pyfiglet.figlet_format("SSH Honeypot")
 except:
     print("Failed to detect pyfiglet.\n")
     ban="SSH Honeypot By Pheonix"
 
 print(ban)
 
-LOG_FILE_NAME = "naveen.log"
+LOG_FILE_NAME = "ssh-honeypot.log"
 LOG_FILE_LOCK = threading.Lock()
 
 BANNERS = [
